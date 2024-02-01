@@ -1,0 +1,8 @@
+
+docker build -t flask_predict_api .
+docker images
+docker rmi imageid
+docker run -d -p 3001:3001 flask_predict_api
+docker ps -a
+docker stop dockerid
+docker rm dockerid
